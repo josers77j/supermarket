@@ -14,5 +14,14 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # supermarket
 
 
-#COMANDOS
-## sail stop && sail up -d && npm run dev
+# COMANDOS
+## Para ejecutar el proyecto puedes usar el siguiente comando (ten en cuenta que este comando funciona si tienes definido un alias):
+- sail stop && sail up -d && npm run dev
+
+## Comando para obtener la direccion ip de wsl para la red y asi utilizar un gestor de base de datos como tableplus o ddbeaver.
+- wsl hostname -I
+
+## ALIAS EN ZSH
+alias sail='./vendor/bin/sail'
+
+
