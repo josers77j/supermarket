@@ -22,10 +22,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - wsl hostname -I
 
 ## ALIAS EN ZSH
-alias sail='./vendor/bin/sail'
+- alias sail='./vendor/bin/sail'
 
 
-# Asegúrate de que tengas una clave SSH pública y privada configurada en tu sistema. Por lo general, se encuentran en ~/.ssh/id_rsa (clave privada) y ~/.ssh/id_rsa.pub (clave pública).
+## Asegúrate de que tengas una clave SSH pública y privada configurada en tu sistema. Por lo general, se encuentran en ~/.ssh/id_rsa (clave privada) y ~/.ssh/id_rsa.pub (clave pública).
 ## Inicia el agente SSH:
 Abre una terminal y ejecuta el siguiente comando para iniciar el agente SSH:
 - eval "$(ssh-agent -s)"
@@ -35,6 +35,6 @@ Usa el siguiente comando para agregar tu clave privada al agente SSH:
 ## Configura tu archivo SSH config (opcional pero recomendado):
 - Puedes configurar tu archivo ~/.ssh/config para especificar la clave SSH a usar para ciertos hosts.
 - Abre o crea el archivo ~/.ssh/config y agrega la configuración para tu host de GitHub:
-
--Host github.com
+---
+- Host github.com
 -  IdentityFile ~/.ssh/id_rsa
