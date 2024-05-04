@@ -27,7 +27,7 @@ Route::middleware('auth')->group(function (){
     Route::delete('/profile', [UserProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware('auth')->group(function (){
+Route::middleware(['auth', 'role:admin'])->group(function (){
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 });
 /* Route::middleware([
