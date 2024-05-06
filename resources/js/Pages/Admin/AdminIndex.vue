@@ -12,8 +12,9 @@ import Welcome from '@/Components/Welcome.vue';
         </template>
 
         <div class="py-4">
-            <h1>Welcome Admin</h1>
+            <h1>Welcome Admin </h1>
             
+
         </div>
     </AdminLayout>
 </template>

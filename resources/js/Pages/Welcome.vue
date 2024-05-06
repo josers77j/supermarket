@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
 
+
 defineProps({
     canLogin: {
         type: Boolean,
@@ -38,11 +39,11 @@ function handleImageError() {
                     </div>
                     <nav v-if="canLogin" class="-mx-3 flex flex-1 justify-end">
                         <Link
-                            v-if="$page.props.auth.user"
+                            v-if="$page.props.auth.user && $page.props.auth.user.roles && $page.props.auth.user.permissions"
                             :href="route('dashboard')"
                             class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                         >
-                            Dashboard
+                            Dashboard 
                         </Link>
 
                         <template v-else>
@@ -98,7 +99,7 @@ function handleImageError() {
                                         <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
 
                                         <p class="mt-4 text-sm/relaxed">
-                                            Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
+                                          aca Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
                                         </p>
                                     </div>
                                 </div>
